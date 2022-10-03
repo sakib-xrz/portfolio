@@ -52,19 +52,41 @@ header {
   padding: 3rem 1.5rem 0rem 1.5rem;
 }
 
-.me img{
-    max-width: 100%;
-    height: auto;
+.me img {
+  max-width: 100%;
+  height: auto;
 }
 /* =============== SCROLL DOWN ============== .*/
 
 .scroll_down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 105px;
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -0.4em;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  animation: bounce 0.75s infinite linear;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
