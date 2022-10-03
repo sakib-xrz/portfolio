@@ -1,13 +1,12 @@
 import React from 'react'
 import "./Footer.css"
-import { AiFillFacebook } from "react-icons/ai";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer>
-      
       <ul className="permalinks">
         <li>
           <a href="#header">Home</a>
@@ -31,30 +30,32 @@ const Footer = () => {
 
       <div className="footer_social">
         <a
+          href="https://www.linkedin.com/in/sakib-xrz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/sakib-xrz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithubSquare />
+        </a>
+        <a
           href="https://www.facebook.com/itsonlysakib"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillFacebook />
-        </a>
-        <a
-          href="https://twitter.com/SakibXrz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitterSquare />
-        </a>
-        <a
-          href="https://www.instagram.com/ig.sakib_xrz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagramSquare />
+          <FaFacebookSquare />
         </a>
       </div>
 
       <div className="footer_copyright">
-        <small> &copy; Md Sakibul Islam. All right reserved.</small>
+        <small className='copy'>
+          &copy; Md Sakibul Islam. All right reserved.
+        </small>
       </div>
     </footer>
   );
