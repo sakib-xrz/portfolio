@@ -15,10 +15,18 @@ const Timeline = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className=" timeline"
-          contentStyle={{ background: "#2c2c6c", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #2c2c6c" }}
+          contentStyle={{
+            background: "var(--color-bg-variant)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid var(--color-bg-variant)",
+          }}
           date="2018 - Present"
-          iconStyle={{ background: "#2c2c6c", color: "#4db5ff" }}
+          iconStyle={{
+            background: "var(--color-bg-variant)",
+            color: "var(--color-white)",
+          }}
           icon={<FaGraduationCap />}
         >
           <h3>BSc in Computer Science & Engineering</h3>
@@ -33,10 +41,18 @@ const Timeline = () => {
 
         <VerticalTimelineElement
           className=" timeline"
-          contentStyle={{ background: "#2c2c6c", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #2c2c6c" }}
+          contentStyle={{
+            background: "var(--color-bg-variant)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid var(--color-bg-variant)",
+          }}
           date="2016 - 2018"
-          iconStyle={{ background: "#2c2c6c", color: "#4db5ff" }}
+          iconStyle={{
+            background: "var(--color-bg-variant)",
+            color: "var(--color-white)",
+          }}
           icon={<FaGraduationCap />}
         >
           <h3>Higher Secondary School Certificate</h3>
@@ -50,10 +66,18 @@ const Timeline = () => {
 
         <VerticalTimelineElement
           className=" timeline"
-          contentStyle={{ background: "#2c2c6c", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #2c2c6c" }}
+          contentStyle={{
+            background: "var(--color-bg-variant)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid var(--color-bg-variant)",
+          }}
           date="2014 - 2016"
-          iconStyle={{ background: "#2c2c6c", color: "#4db5ff" }}
+          iconStyle={{
+            background: "var(--color-bg-variant)",
+            color: "var(--color-white)",
+          }}
           icon={<FaGraduationCap />}
         >
           <h3>Secondary School Certificate</h3>

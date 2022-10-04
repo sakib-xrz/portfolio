@@ -1,13 +1,15 @@
-import React from 'react'
-import CTA from './CTA'
-import "./Header.css"
-import MyImg from "./../../assets/me.png"
-import HeaderSocial from './HeaderSocial'
-import {AiOutlineDoubleRight} from "react-icons/ai"
+import React from "react";
+import CTA from "./CTA";
+import "./Header.css";
+import MyImg from "./../../assets/me.png";
+import HeaderSocial from "./HeaderSocial";
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import Switcher from "./Switcher";
 
 const Header = () => {
   return (
     <header id="header">
+      <Switcher></Switcher>
       <div className="container header_container">
         <h5>Hello I'm</h5>
         <h1>Md Sakibul Islam</h1>
@@ -24,6 +26,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;
