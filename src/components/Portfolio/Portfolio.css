@@ -1,50 +1,88 @@
-.portfolio_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.portfolio_item {
-  background: var(--color-bg-variant);
-  padding: 1.3rem;
-  border-radius: 1.5rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-}
-
-.portfolio_item h3 {
-  margin: 1.2rem 0 2rem;
-  text-align: center;
-}
-
-.portfolio_item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
-}
-
-.portfolio_item_image {
-  border-radius: 1.5rem;
-  overflow: hidden;
-}
-
-.demo_button {
+.project__section {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.project__right__middle {
+  width: 50%;
+  text-align: start;
+}
+
+.project__description__middle {
+  background: #112240;
+  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+  padding: 15px;
+  border-radius: 8px;
+  margin-right: -40px;
+  text-align: justify;
+  z-index: 3;
+}
+
+.project__left {
+  width: 50%;
+  z-index: -1;
+}
+
+.project__right {
+  width: 50%;
+  text-align: end;
+}
+
+.project__description {
+  background: #112240;
+  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+  padding: 15px;
+  border-radius: 8px;
+  margin-left: -40px;
+  text-align: justify;
+  z-index: 3;
+}
+
+.project__img {
+  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+  border-radius: 8px;
+  filter: brightness(70%);
+  /* width: 100%; */
+  z-index: 0;
+}
+
+.icons {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
 
 @media screen and (max-width: 1024px) {
-  .portfolio_container {
-    grid-template-columns: repeat(2, 1fr);
+  .project__section {
+    display: flex;
+    flex-direction: column;
+  }
+  .project__left {
+    width: 100%;
+  }
+  .project__right {
+    width: 100%;
+    text-align: end;
+  }
+  .project__right__middle {
+    width: 100%;
+    text-align: start;
+  }
+  .middle{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .project__description {
+    margin-left: 0px;
+  }
+  .project__description__middle {
+    margin-right: 0px;
   }
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
 
 @media screen and (max-width: 600px) {
-  .portfolio_container {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

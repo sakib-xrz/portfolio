@@ -1,50 +1,11 @@
 import React from "react";
 import "./Portfolio.css";
-import demo1 from "./../../assets/portfolio1.jpg";
-import demo2 from "./../../assets/portfolio2.jpg";
-import demo3 from "./../../assets/portfolio3.jpg";
-import demo4 from "./../../assets/portfolio4.jpg";
-import demo5 from "./../../assets/portfolio5.jpg";
-import demo6 from "./../../assets/portfolio6.jpg";
+import {FiGithub} from "react-icons/fi"
+import { FiExternalLink } from "react-icons/fi";
+import project1 from "./../../assets/project-1.png";
+import project2 from "./../../assets/project-2.png";
+import project3 from "./../../assets/project-3.png";
 
-const projects = [
-  {
-    id: 1,
-    img: demo1,
-    title: "Build Your Dream Team",
-    demo: "https://build-dream-team.netlify.app/",
-  },
-  {
-    id: 2,
-    img: demo2,
-    title: "Check Your Typing Skill",
-    demo: "https://speed-booster.netlify.app/",
-  },
-  {
-    id: 3,
-    img: demo3,
-    title: "Let's Find Your Phone",
-    demo: "https://sakib-xrz.github.io/phone-hunter-api/",
-  },
-  {
-    id: 4,
-    img: demo4,
-    title: "Commit To Be Fit",
-    demo: "https://fit-factory-react.netlify.app/",
-  },
-  {
-    id: 5,
-    img: demo5,
-    title: "Explore All Latest News",
-    demo: "https://news-era.netlify.app/",
-  },
-  {
-    id: 6,
-    img: demo6,
-    title: "See Today's Weather",
-    demo: "https://sakib-xrz.github.io/weather-app/",
-  },
-];
 
 const Portfolio = () => {
   return (
@@ -52,29 +13,156 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio_container">
-        {
-          projects.map(({id,img,title,demo}) => {
-            return (
-              <article key={id} className="portfolio_item">
-                <div className="portfolio_item_image">
-                  <img src={img} alt="" />
-                </div>
-                <h3>{title}</h3>
-                <div className="demo_button">
-                  <a
-                    className="btn"
-                    href={demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-              </article>
-            );
-          })
-        }
+      <div className="container portfolio_container project">
+        <div className="project__section">
+          <div className="project__left">
+            <img className="project__img" src={project1} alt="color palette" />
+          </div>
+          <div className="project__right">
+            <p className="project__headingTertiary">
+              <small>Featured Project</small>
+            </p>
+            <a
+              href="https://github.com/sakib-xrz/swap-deal-client "
+              target="_blank"
+              rel="noreferrer"
+              className="project__headingSecondary"
+            >
+              <h2>Swap Deal</h2>
+            </a>
+            <div className="project__descriptionContainer">
+              <p className="project__description">
+                Swap Deal is a used product's resale website with a dedicated
+                admin panel. User, Seller, and admin roles added with the Google
+                authentication system. Buyer can see their order and pay, Seller
+                can see their uploaded product and add a new product and admin
+                can see all buyers, all sellers, and reported products.
+              </p>
+              <div className="project__tags">
+                <small>
+                  {" "}
+                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; Node.js
+                  &nbsp; Express.js &nbsp; MongoDB &nbsp; Firebase
+                </small>
+              </div>
+              <div className="project__icons">
+                <a
+                  href="https://github.com/sakib-xrz/swap-deal-client"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginRight: "1rem" }}
+                >
+                  <FiGithub className="icons" />
+                </a>
+                <a
+                  href="https://swap-deal-bd.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiExternalLink className="icons" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="project__section middle">
+          <div className="project__right__middle">
+            <p className="project__headingTertiary">
+              <small>Featured Project</small>
+            </p>
+            <a
+              href="https://github.com/sakib-xrz/service-review-client"
+              target="_blank"
+              rel="noreferrer"
+              className="project__headingSecondary"
+            >
+              <h2>Pixel Pictures</h2>
+            </a>
+            <div className="project__descriptionContainer">
+              <p className="project__description__middle">
+                Service Website including add or remove services. Form to leave
+                reviews for the clients to show on the details page. Option to
+                add more services to all service page.
+              </p>
+              <div className="project__tags">
+                <small>
+                  {" "}
+                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; Node.js
+                  &nbsp; Express.js &nbsp; MongoDB &nbsp; Firebase
+                </small>
+              </div>
+              <div className="project__icons">
+                <a
+                  href="https://github.com/sakib-xrz/service-review-client"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginRight: "1rem" }}
+                >
+                  <FiGithub className="icons" />
+                </a>
+                <a
+                  href="https://service-review-6ef0e.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiExternalLink className="icons" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project__left">
+            <img className="project__img" src={project2} alt="color palette" />
+          </div>
+        </div>
+        <div className="project__section">
+          <div className="project__left">
+            <img className="project__img" src={project3} alt="color palette" />
+          </div>
+          <div className="project__right">
+            <p className="project__headingTertiary">
+              <small>Featured Project</small>
+            </p>
+            <a
+              href="https://github.com/sakib-xrz/code-easy-client"
+              target="_blank"
+              rel="noreferrer"
+              className="project__headingSecondary"
+            >
+              <h2>Code Easy</h2>
+            </a>
+            <div className="project__descriptionContainer">
+              <p className="project__description">
+                E-learning Website for web developers. Log In method with
+                private route feature. Option to download course details page
+                as a pdf.
+              </p>
+              <div className="project__tags">
+                <small>
+                  {" "}
+                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; daisyUI
+                  &nbsp; Firebase &nbsp; React to PDF Package
+                </small>
+              </div>
+              <div className="project__icons">
+                <a
+                  href="https://github.com/sakib-xrz/code-easy-client"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginRight: "1rem" }}
+                >
+                  <FiGithub className="icons" />
+                </a>
+                <a
+                  href="https://code-easy-client.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiExternalLink className="icons" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
