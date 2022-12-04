@@ -8,7 +8,7 @@ import Timeline from './Timeline'
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -20,34 +20,35 @@ const About = () => {
         </div>
         <div className="about_content">
           <div className="about_cards">
-            <article className='about_card'>
-              <BiBriefcase className='about_icon'/>
+            <article className="about_card">
+              <BiBriefcase className="about_icon" />
               <h5>Experience</h5>
-              <small>1.5 Years</small>
+              <small>1 Year</small>
             </article>
-            <article className='about_card'>
-              <FiUsers className='about_icon'/>
+            <article className="about_card">
+              <FiUsers className="about_icon" />
               <h5>Clients</h5>
               <small>10+ Worldwide</small>
             </article>
-            <article className='about_card'>
-              <RiFolderSettingsLine className='about_icon'/>
+            <article className="about_card">
+              <RiFolderSettingsLine className="about_icon" />
               <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
 
           <p>
-            Hello, I’m Sakib, My core skill is based on javaScript
-            and I love to do most of the things with javaScript. I have a strong passion for learning & implementing new web technologies and standards. I’m currently studying Computer Science and Engineering at Daffodil International University.
+            I'm a frontend-based full-stack developer from Bangladesh. I love web development because I can showcase my creativity in this work. I want to see myself as a skilled web developer through my hard work. I am just starting my career so I want to work with the kind of people so that I can improve myself professionally and personally through them. I’m currently studying Computer Science and Engineering at Daffodil International University.
           </p>
 
-          <a className='btn btn-primary' href="#contact">Let's Talk</a>
+          <a className="btn btn-primary" href="#contact">
+            Let's Talk
+          </a>
         </div>
       </div>
       <Timeline></Timeline>
     </section>
-  )
+  );
 }
 
 export default About

@@ -4,7 +4,7 @@ import { BiEnvelope } from "react-icons/bi";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { useRef } from "react";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -30,7 +30,7 @@ const Contact = () => {
         }
       );
 
-      e.target.reset()
+    e.target.reset();
   };
 
   const notify = () =>
@@ -54,9 +54,9 @@ const Contact = () => {
           <article className="contact_option">
             <BiEnvelope className="contact_icon" />
             <h4>Email</h4>
-            <h5>sakibxrz21@gmail.com</h5>
+            <h5>sakibul.islam0808@gmail.com</h5>
             <a
-              href="mailto:sakibxrz21@gmail.com"
+              href="mailto:sakibul.islam0808@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
