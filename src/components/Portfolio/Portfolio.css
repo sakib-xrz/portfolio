@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   padding: 10px 0px;
+  margin-bottom: 10px;
 }
 
 .project__right__middle {
@@ -47,6 +48,9 @@
   z-index: 0;
 }
 
+.project__tags{
+  margin-top: 5px;
+}
 .icons {
   font-size: 1.5rem;
   margin-top: 10px;
@@ -60,15 +64,16 @@
     flex-direction: column;
   }
   .project__left {
-    width: 100%;
+    /* width: 100%; */
+    display: none;
   }
   .project__right {
     width: 100%;
-    text-align: end;
+    text-align: start;
   }
   .project__right__middle {
     width: 100%;
-    text-align: start;
+    text-align: end;
   }
   .middle{
     display: flex;
@@ -80,9 +85,4 @@
   .project__description__middle {
     margin-right: 0px;
   }
-}
-
-/* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
-
-@media screen and (max-width: 600px) {
 }
