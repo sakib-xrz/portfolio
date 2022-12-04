@@ -10,15 +10,17 @@ const Header = () => {
   return (
     <header id="header">
       <Switcher></Switcher>
-      <div className="container header_container">
-        <h5>Hello I'm</h5>
-        <h1>Md Sakibul Islam</h1>
-        <h5 className="text-light">Front-End Developer</h5>
-        <CTA />
-        <HeaderSocial />
-        <div className="me">
-          <img src={MyImg} alt="" />
+      <div className="container heder-content header_container">
+        <div className="animate__animated animate__slideInDown">
+          <div className="me">
+            <img src={MyImg} alt="" />
+          </div>
+          <h5>Hello I'm</h5>
+          <h1>Md Sakibul Islam</h1>
+          <h5 className="text-light">Front-End Developer</h5>
+          <CTA />
         </div>
+        <HeaderSocial />
 
         <a className="scroll_down" href="#contact">
           Scroll Down <AiOutlineDoubleRight className="bounce" />

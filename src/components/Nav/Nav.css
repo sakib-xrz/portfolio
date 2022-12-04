@@ -13,6 +13,7 @@ nav {
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
+
 nav a {
   background: transparent;
   padding: 0.9rem;
