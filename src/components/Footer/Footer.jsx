@@ -30,7 +30,7 @@ const Footer = () => {
 
       <div className="footer_social">
         <a
-          href="https://www.linkedin.com/in/sakib-xrz/"
+          href="https://www.linkedin.com/in/sakib08/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small className='copy'>
+        <small className="copy">
           &copy; Md Sakibul Islam. All right reserved.
         </small>
       </div>
