@@ -11,7 +11,7 @@
 }
 
 .project__description__middle {
-  background: #112240;
+  background: var(--color-bg-variant);
   box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
   padding: 15px;
   border-radius: 8px;
@@ -31,7 +31,7 @@
 }
 
 .project__description {
-  background: #112240;
+  background: var(--color-bg-variant);
   box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
   padding: 15px;
   border-radius: 8px;
@@ -44,12 +44,12 @@
   box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
   border-radius: 8px;
   filter: brightness(70%);
-  /* width: 100%; */
   z-index: 0;
 }
 
 .project__tags{
   margin-top: 5px;
+  color: var(--color-light);
 }
 .icons {
   font-size: 1.5rem;
