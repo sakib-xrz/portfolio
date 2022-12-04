@@ -14,7 +14,7 @@
   box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
   padding: 15px;
   border-radius: 8px;
-  margin-right: -40px;
+  margin-right: -20px;
   text-align: justify;
   z-index: 3;
 }
@@ -34,7 +34,7 @@
   box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
   padding: 15px;
   border-radius: 8px;
-  margin-left: -40px;
+  margin-left: -20px;
   text-align: justify;
   z-index: 3;
 }
