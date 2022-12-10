@@ -65,6 +65,7 @@
 }
 .about_content p {
   margin: 2rem 0 2.6rem;
+  text-align: justify;
   color: var(--color-light);
 }
 
