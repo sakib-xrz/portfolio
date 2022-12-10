@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import { BiEnvelope } from "react-icons/bi";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
-import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const contactForm = e.target;
+    emailjs
+      .sendForm(
+        "service_dkvcfzt",
+        "template_yhuap9f",
+        form.current,
+        "WYMT3hCaO6rq9MWN0"
+      )
+      .then(
+        (result) => {
+          if (result.text) {
+            contactForm.reset();
+            toast.success("Message sent", {
+              style: {
+                border: "1px solid #26537C",
+                backgroundColor: "#14233B",
+                padding: "16px",
+                color: "#ffffff",
+              },
+            });
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -50,21 +82,26 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            name="name"
+            name="user_name"
             placeholder="Your Full Name"
             required
           />
-          <input type="text" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" value="Send" className="btn btn-primary">
             Send Message
           </button>
         </form>
