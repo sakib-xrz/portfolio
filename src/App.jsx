@@ -8,10 +8,11 @@ import Portfolio from "./components/Portfolio/Portfolio"
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer"
 import "animate.css";
+import "./app.css";
 
 const App = () => {
   return (
-    <>
+    <div className='portfolio-body'>
       <Header/>
       <Nav/>
       <About/>
@@ -20,7 +21,7 @@ const App = () => {
       <Services/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

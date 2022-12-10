@@ -62,7 +62,7 @@ const Experience = () => {
               <FaReact className="experience-icons" />
               <div>
                 <h4>React</h4>
-                <small className="text-light">Beginner</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>

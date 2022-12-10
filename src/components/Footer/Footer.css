@@ -13,8 +13,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--color-primary);
-
+  color: #57B2F5;
   transform: translate 0,0px rotate 0 skewX 0 skewY 0 scaleX 1 scaleY 1;
 }
 
@@ -48,7 +47,7 @@ footer a:hover {
 }
 
 .footer_social a:hover {
-  color: var(--color-primary);
+  color: #57B2F5;
 }
 
 .footer_copyright {

@@ -49,7 +49,7 @@ header {
 /* =============== MY IMAGE ============== .*/
 
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(#4db5ff, transparent);
   margin: 0 auto;
   max-width: 18rem;
   height: auto;

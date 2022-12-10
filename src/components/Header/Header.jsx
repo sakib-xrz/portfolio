@@ -4,12 +4,10 @@ import "./Header.css";
 import MyImg from "./../../assets/me.png";
 import HeaderSocial from "./HeaderSocial";
 import { AiOutlineDoubleRight } from "react-icons/ai";
-import Switcher from "./Switcher";
 
 const Header = () => {
   return (
     <header id="header">
-      <Switcher></Switcher>
       <div className="container heder-content header_container">
         <div className="animate__animated animate__slideInDown">
           <div className="me">

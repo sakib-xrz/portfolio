@@ -12,8 +12,22 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
+  --color-bg-variant: linear-gradient(
+    to right bottom,
+    #0b263b,
+    #11243b,
+    #18223a,
+    #1e2039,
+    #231d37
+  );
+  --color-primary: linear-gradient(
+    to right bottom,
+    #4db5ff,
+    #5ba5fc,
+    #7292f5,
+    #8a7ee8,
+    #a166d4
+  );
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
@@ -34,14 +48,6 @@
   --color-light: rgba(255, 255, 255, 0.6);
 }
 
-.light {
-  --color-bg: #233844;
-  --color-bg-variant: #2a4554;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -55,7 +61,9 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(./../src/assets/bg-texture.png);
+  background-image: url(./../src/assets/bg-img.jpg);
+  background-size: 86.125rem;
+  background-attachment: fixed;
 }
 
 /* ===========General Styles=========== */
@@ -77,8 +85,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-p{
-  font-size: .8rem;
+p {
+  font-size: 0.8rem;
 }
 
 section {
@@ -103,7 +111,7 @@ section > h2 {
 }
 
 a {
-  color: var(--color-primary);
+  color: #57B2F5;
   transition: var(--transition);
 }
 
@@ -114,11 +122,11 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-white);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid #4db5ff;
   transition: var(--transition);
 }
 
@@ -130,7 +138,7 @@ a:hover {
 
 .btn-primary {
   background: var(--color-primary);
-  color: var(--color-bg);
+  transition: var(--transition);
 }
 
 img {
