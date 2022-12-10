@@ -14,9 +14,8 @@ const Portfolio = () => {
 
       <div className="container portfolio_container project">
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="project__section"
         >
           <div className="project__left">
@@ -70,9 +69,8 @@ const Portfolio = () => {
           </div>
         </div>
         <div
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="project__section middle"
         >
           <div className="project__right__middle">
@@ -124,9 +122,8 @@ const Portfolio = () => {
           </div>
         </div>
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="project__section"
         >
           <div className="project__left">

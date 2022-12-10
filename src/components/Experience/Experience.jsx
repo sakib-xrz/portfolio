@@ -21,9 +21,8 @@ const Experience = () => {
 
       <div className="container experience_container">
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="experience_frontend"
         >
           <h3>Frontend Development</h3>
@@ -74,9 +73,8 @@ const Experience = () => {
         </div>
 
         <div
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="experience_tools"
         >
           <div className="experience_frontend">

@@ -13,7 +13,7 @@ const Services = () => {
         <div className="service_cards">
           <div
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
             className="service_card"
           >
             <HiCode className="card-icons" />
@@ -29,7 +29,7 @@ const Services = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
             className="service_card"
           >
             <MdOutlineDevices className="card-icons" />
@@ -45,7 +45,7 @@ const Services = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
             className="service_card"
           >
             <BsCurrencyDollar className="card-icons" />

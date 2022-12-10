@@ -45,9 +45,8 @@ const Contact = () => {
 
       <div className="container contact_container">
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="contact_options"
         >
           <article className="contact_option">
@@ -88,9 +87,8 @@ const Contact = () => {
           </article>
         </div>
         <form
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           ref={form}
           onSubmit={sendEmail}
         >

@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutImage from "./../../assets/me-about.jpg";
+import AboutImage from "./../../assets/formal-image.png";
 import { BiBriefcase } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { RiFolderSettingsLine } from "react-icons/ri";
@@ -12,23 +12,17 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about_container">
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="about_me"
-        >
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        className="container about_container"
+      >
+        <div className="about_me">
           <div className="about_me_image">
             <img src={AboutImage} alt="" />
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="about_content"
-        >
+        <div className="about_content">
           <div className="about_cards">
             <article className="about_card">
               <BiBriefcase className="about_icon" />

@@ -5,28 +5,20 @@
 }
 
 .about_me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    #4db5ff,
-    transparent
-  );
   display: grid;
   place-items: center;
 }
 
 .about_me_image {
+  display: flex;
+  justify-content: center;
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
 }
 
-.about_me_image:hover {
-  transform: rotate(0);
+.about_me_image img {
+  width: 70%;
+  border-radius: 2rem;
 }
 
 .about_cards {
@@ -71,39 +63,38 @@
 
 /* =============== Timeline ============== .*/
 
-#timeline h3{
-    font-weight: 500 !important;
-    color: var(--color-primary) !important;
+#timeline h3 {
+  font-weight: 500 !important;
+  color: var(--color-primary) !important;
 }
 
-#timeline h5{
-    font-weight: 500 !important;
-    color: var(--color-light) !important;
+#timeline h5 {
+  font-weight: 500 !important;
+  color: var(--color-light) !important;
 }
 
-#timeline p{
+#timeline p {
   font-weight: 400;
 }
 
-
 .vertical-timeline::before {
-    width: 2px !important;
-    background: #374151 !important;
+  width: 2px !important;
+  background: #374151 !important;
 }
 
 .vertical-timeline-element-icon {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .vertical-timeline::after {
-    content: none !important;
+  content: none !important;
 }
 
 .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    visibility: visible;
-    -webkit-animation: none !important;
-    animation: none !important;
+  visibility: visible;
+  -webkit-animation: none !important;
+  animation: none !important;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
