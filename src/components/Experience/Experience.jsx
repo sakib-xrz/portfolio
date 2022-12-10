@@ -1,6 +1,6 @@
-import React from 'react'
-import "./Experience.css"
-import { AiFillHtml5 } from "react-icons/ai"
+import React from "react";
+import "./Experience.css";
+import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaBootstrap } from "react-icons/fa";
@@ -20,7 +20,12 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience_container">
-        <div className="experience_frontend">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="experience_frontend"
+        >
           <h3>Frontend Development</h3>
           <div className="experience_content">
             <article className="experience_details">
@@ -68,7 +73,12 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience_tools">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="experience_tools"
+        >
           <div className="experience_frontend">
             <h3>Systems & Tools</h3>
             <div className="experience_content">
@@ -120,6 +130,6 @@ const Experience = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Experience
+export default Experience;

@@ -44,7 +44,12 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact_container">
-        <div className="contact_options">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="contact_options"
+        >
           <article className="contact_option">
             <BiEnvelope className="contact_icon" />
             <h4>Email</h4>
@@ -82,7 +87,13 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <input
             type="text"
             name="user_name"

@@ -11,7 +11,11 @@ const Services = () => {
       <h2>Services</h2>
       <div className="container service_container">
         <div className="service_cards">
-          <div className="service_card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="service_card"
+          >
             <HiCode className="card-icons" />
             <div className="card-content">
               <h3>Web Development</h3>
@@ -23,7 +27,11 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="service_card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="service_card"
+          >
             <MdOutlineDevices className="card-icons" />
             <div className="card-content">
               <h3>Responsive Design</h3>
@@ -35,7 +43,11 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="service_card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="service_card"
+          >
             <BsCurrencyDollar className="card-icons" />
             <div className="card-content">
               <h3>Reasonable Cost</h3>

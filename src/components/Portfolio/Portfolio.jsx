@@ -1,11 +1,10 @@
 import React from "react";
 import "./Portfolio.css";
-import {FiGithub} from "react-icons/fi"
+import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 import project1 from "./../../assets/project-1.png";
 import project2 from "./../../assets/project-2.png";
 import project3 from "./../../assets/project-3.png";
-
 
 const Portfolio = () => {
   return (
@@ -14,7 +13,12 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container project">
-        <div className="project__section">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="project__section"
+        >
           <div className="project__left">
             <img className="project__img" src={project1} alt="color palette" />
           </div>
@@ -65,7 +69,12 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="project__section middle">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="project__section middle"
+        >
           <div className="project__right__middle">
             <p className="project__headingTertiary">
               <small>Featured Project</small>
@@ -114,7 +123,12 @@ const Portfolio = () => {
             <img className="project__img" src={project2} alt="color palette" />
           </div>
         </div>
-        <div className="project__section">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="project__section"
+        >
           <div className="project__left">
             <img className="project__img" src={project3} alt="color palette" />
           </div>
@@ -133,8 +147,8 @@ const Portfolio = () => {
             <div className="project__descriptionContainer">
               <p className="project__description">
                 E-learning Website for web developers. Log In method with
-                private route feature. Option to download course details page
-                as a pdf.
+                private route feature. Option to download course details page as
+                a pdf.
               </p>
               <div className="project__tags">
                 <small>
