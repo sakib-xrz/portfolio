@@ -5,175 +5,150 @@ import { FiExternalLink } from "react-icons/fi";
 import project1 from "./../../assets/project-1.png";
 import project2 from "./../../assets/project-2.png";
 import project3 from "./../../assets/project-3.png";
+import { Link } from "react-router-dom";
+
+const projects = [
+  {
+    projectID: "01",
+    projectName: "Swap Deal",
+    img: project1,
+    description:
+      "Swap Deal is a used product's resale website with a dedicated admin panel. User, Seller, and admin roles added with the Google authentication system. Buyer can see their order and pay, Seller can see their uploaded product and add a new product and admin can see all buyers, all sellers, and reported products.",
+    liveLink: "https://swap-deal-bd.web.app/",
+    clientLink: "https://github.com/sakib-xrz/swap-deal-client",
+    serverLink: "https://github.com/sakib-xrz/swap-deal-server",
+    details: [
+      "⚫️ A complete website with dedicated admin panel also google login feature",
+
+      "⚫️ There is a dashboard to manage admin panel and services.",
+
+      "⚫️ Used React-Router Advance Concepts And Protected Routes.",
+
+      "⚫️ Used Firebase For Authentication.",
+
+      "⚫️ You can Login with Google.",
+
+      "⚫️ Used Environment Variables To Hide Some Secret Data.",
+
+      "⚫️ Used Tailwind CSS Framework.",
+
+      "⚫️ Used React Icons for show icons.",
+
+      "⚫️ Used React-To-Pdf Package to generate and download PDF.",
+    ],
+    screenshot1: "",
+    screenshot2: "",
+    screenshot3: "",
+  },
+  {
+    projectID: "02",
+    projectName: "Swap Deal",
+    img: project2,
+    description:
+      "Swap Deal is a used product's resale website with a dedicated admin panel. User, Seller, and admin roles added with the Google authentication system. Buyer can see their order and pay, Seller can see their uploaded product and add a new product and admin can see all buyers, all sellers, and reported products.",
+    liveLink: "https://swap-deal-bd.web.app/",
+    clientLink: "https://github.com/sakib-xrz/swap-deal-client",
+    serverLink: "https://github.com/sakib-xrz/swap-deal-server",
+    details: [
+      "⚫️ A complete website with dedicated admin panel also google login feature",
+
+      "⚫️ There is a dashboard to manage admin panel and services.",
+
+      "⚫️ Used React-Router Advance Concepts And Protected Routes.",
+
+      "⚫️ Used Firebase For Authentication.",
+
+      "⚫️ You can Login with Google.",
+
+      "⚫️ Used Environment Variables To Hide Some Secret Data.",
+
+      "⚫️ Used Tailwind CSS Framework.",
+
+      "⚫️ Used React Icons for show icons.",
+
+      "⚫️ Used React-To-Pdf Package to generate and download PDF.",
+    ],
+    screenshot1: "",
+    screenshot2: "",
+    screenshot3: "",
+  },
+  {
+    projectID: "03",
+    projectName: "Swap Deal",
+    img: project3,
+    description:
+      "Swap Deal is a used product's resale website with a dedicated admin panel. User, Seller, and admin roles added with the Google authentication system. Buyer can see their order and pay, Seller can see their uploaded product and add a new product and admin can see all buyers, all sellers, and reported products.",
+    liveLink: "https://swap-deal-bd.web.app/",
+    clientLink: "https://github.com/sakib-xrz/swap-deal-client",
+    serverLink: "https://github.com/sakib-xrz/swap-deal-server",
+    details: [
+      "⚫️ A complete website with dedicated admin panel also google login feature",
+
+      "⚫️ There is a dashboard to manage admin panel and services.",
+
+      "⚫️ Used React-Router Advance Concepts And Protected Routes.",
+
+      "⚫️ Used Firebase For Authentication.",
+
+      "⚫️ You can Login with Google.",
+
+      "⚫️ Used Environment Variables To Hide Some Secret Data.",
+
+      "⚫️ Used Tailwind CSS Framework.",
+
+      "⚫️ Used React Icons for show icons.",
+
+      "⚫️ Used React-To-Pdf Package to generate and download PDF.",
+    ],
+    screenshot1: "",
+    screenshot2: "",
+    screenshot3: "",
+  },
+];
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section data-aos="fade-up" data-aos-duration="1500" id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container project">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          className="project__section"
-        >
-          <div className="project__left">
-            <img className="project__img" src={project1} alt="color palette" />
-          </div>
-          <div className="project__right">
-            <p className="project__headingTertiary">
-              <small>Featured Project</small>
-            </p>
-            <a
-              href="https://github.com/sakib-xrz/swap-deal-client "
-              target="_blank"
-              rel="noreferrer"
-              className="project__headingSecondary"
-            >
-              <h2>Swap Deal</h2>
-            </a>
-            <div className="project__descriptionContainer">
-              <p className="project__description">
-                Swap Deal is a used product's resale website with a dedicated
-                admin panel. User, Seller, and admin roles added with the Google
-                authentication system. Buyer can see their order and pay, Seller
-                can see their uploaded product and add a new product and admin
-                can see all buyers, all sellers, and reported products.
-              </p>
-              <div className="project__tags">
-                <small>
-                  {" "}
-                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; Node.js
-                  &nbsp; Express.js &nbsp; MongoDB &nbsp; Firebase
-                </small>
-              </div>
-              <div className="project__icons">
-                <a
-                  href="https://github.com/sakib-xrz/swap-deal-client"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ marginRight: "1rem" }}
-                >
-                  <FiGithub className="icons" />
-                </a>
-                <a
-                  href="https://swap-deal-bd.web.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FiExternalLink className="icons" />
-                </a>
+        {projects.map((project) => (
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            key={project?.projectID}
+            class="box"
+          >
+            <div class="content">
+              <img src={project?.img} alt="" />
+              <div className="text-content">
+                <div className="heading-content">
+                  <h2>{project?.projectName}</h2>
+                  <p>{project?.description.slice(0, 65)}. . .</p>
+                </div>
+                <div className="buttons">
+                  <div>
+                    <Link to={project.projectID}>Read More</Link>
+                  </div>
+                  <div>
+                    <a href={project?.clientLink}>
+                      <FiGithub />
+                    </a>
+                    <a href={project?.liveLink} className="live">
+                      <FiExternalLink />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          className="project__section middle"
-        >
-          <div className="project__right__middle">
-            <p className="project__headingTertiary">
-              <small>Featured Project</small>
-            </p>
-            <a
-              href="https://github.com/sakib-xrz/service-review-client"
-              target="_blank"
-              rel="noreferrer"
-              className="project__headingSecondary"
-            >
-              <h2>Pixel Pictures</h2>
-            </a>
-            <div className="project__descriptionContainer">
-              <p className="project__description__middle">
-                Service Website including add or remove services. Form to leave
-                reviews for the clients to show on the details page. Option to
-                add more services to all service page.
-              </p>
-              <div className="project__tags">
-                <small>
-                  {" "}
-                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; Node.js
-                  &nbsp; Express.js &nbsp; MongoDB &nbsp; Firebase
-                </small>
-              </div>
-              <div className="project__icons">
-                <a
-                  href="https://github.com/sakib-xrz/service-review-client"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ marginRight: "1rem" }}
-                >
-                  <FiGithub className="icons" />
-                </a>
-                <a
-                  href="https://service-review-6ef0e.web.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FiExternalLink className="icons" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="project__left">
-            <img className="project__img" src={project2} alt="color palette" />
-          </div>
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          className="project__section"
-        >
-          <div className="project__left">
-            <img className="project__img" src={project3} alt="color palette" />
-          </div>
-          <div className="project__right">
-            <p className="project__headingTertiary">
-              <small>Featured Project</small>
-            </p>
-            <a
-              href="https://github.com/sakib-xrz/code-easy-client"
-              target="_blank"
-              rel="noreferrer"
-              className="project__headingSecondary"
-            >
-              <h2>Code Easy</h2>
-            </a>
-            <div className="project__descriptionContainer">
-              <p className="project__description">
-                E-learning Website for web developers. Log In method with
-                private route feature. Option to download course details page as
-                a pdf.
-              </p>
-              <div className="project__tags">
-                <small>
-                  {" "}
-                  React &nbsp; React Router &nbsp; Tailwind CSS &nbsp; daisyUI
-                  &nbsp; Firebase &nbsp; React to PDF Package
-                </small>
-              </div>
-              <div className="project__icons">
-                <a
-                  href="https://github.com/sakib-xrz/code-easy-client"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ marginRight: "1rem" }}
-                >
-                  <FiGithub className="icons" />
-                </a>
-                <a
-                  href="https://code-easy-client.web.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FiExternalLink className="icons" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
+      </div>
+      <div className="all-project-button">
+        <a className="btn btn-primary" href="#contact">
+          See All Projects
+        </a>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ import {FaGraduationCap} from "react-icons/fa"
 
 const Timeline = () => {
   return (
-    <section id="timeline">
+    <section data-aos="fade-up" data-aos-duration="1500" id="timeline">
       <h5>Resume</h5>
       <h2>Educational Qualifications</h2>
       <VerticalTimeline>

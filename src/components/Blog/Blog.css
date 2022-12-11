@@ -1,0 +1,38 @@
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 250px);
+  margin: 50px;
+  padding: 20px;
+  background: var(--color-bg-variant);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  z-index: 1;
+  color: #fff;
+}
+
+.blog {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 900;
+  background: linear-gradient(136deg, #4db5ff 34%, #a166d4 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
+
+@media screen and (max-width: 1024px) {
+  .blog {
+    font-size: 4rem;
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
+
+@media screen and (max-width: 600px) {
+  .blog {
+    font-size: 3rem;
+  }
+}

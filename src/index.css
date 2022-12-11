@@ -90,9 +90,9 @@ p {
 }
 
 section {
-  margin-top: 7rem;
-  padding-top: 1rem;
-  /* height: 100vh; */
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 section > h2,
@@ -152,10 +152,6 @@ img {
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
-  }
-
-  section {
-    margin-top: 6rem;
   }
 }
 

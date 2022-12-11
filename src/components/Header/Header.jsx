@@ -3,7 +3,7 @@ import CTA from "./CTA";
 import "./Header.css";
 import MyImg from "./../../assets/me.png";
 import HeaderSocial from "./HeaderSocial";
-import { AiOutlineDoubleRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -20,9 +20,9 @@ const Header = () => {
         </div>
         <HeaderSocial />
 
-        <a className="scroll_down" href="#contact">
-          Scroll Down <AiOutlineDoubleRight className="bounce" />
-        </a>
+        <Link className="scroll_down" to="/contact">
+          Let's Talk
+        </Link>
       </div>
     </header>
   );

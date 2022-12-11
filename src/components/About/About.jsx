@@ -5,18 +5,15 @@ import { BiBriefcase } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { RiFolderSettingsLine } from "react-icons/ri";
 import Timeline from "./Timeline";
+import Experience from "../Experience/Experience";
 
 const About = () => {
   return (
-    <section id="about">
+    <section data-aos="fade-up" data-aos-duration="1500" id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        className="container about_container"
-      >
+      <div className="container about_container">
         <div className="about_me">
           <div className="about_me_image">
             <img src={AboutImage} alt="" />
@@ -57,6 +54,7 @@ const About = () => {
         </div>
       </div>
       <Timeline></Timeline>
+      <Experience></Experience>
     </section>
   );
 };

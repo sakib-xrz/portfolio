@@ -1,88 +1,84 @@
-.project__section {
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.container .box {
+  width: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px 0px;
-  margin-bottom: 10px;
+  transition: transform 0.5s;
 }
 
-.project__right__middle {
-  width: 50%;
-  text-align: start;
+.container .box:hover {
+  transform: scale(1.05);
 }
 
-.project__description__middle {
+.container .box:hover img {
+  opacity: 1;
+}
+
+.container .box .content {
   background: var(--color-bg-variant);
-  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
-  padding: 15px;
+  backdrop-filter: blur(10px);
   border-radius: 8px;
-  margin-right: -20px;
-  text-align: justify;
-  z-index: 3;
+  z-index: 1;
+  color: #fff;
 }
 
-.project__left {
-  width: 50%;
-  z-index: -1;
+.text-content {
+  padding: 20px;
 }
 
-.project__right {
-  width: 50%;
-  text-align: end;
+.portfolio_container img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.8;
 }
 
-.project__description {
-  background: var(--color-bg-variant);
-  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
-  padding: 15px;
-  border-radius: 8px;
-  margin-left: -20px;
-  text-align: justify;
-  z-index: 3;
+.heading-content {
+  margin-bottom: 15px;
 }
 
-.project__img {
-  box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
-  border-radius: 8px;
-  filter: brightness(70%);
-  z-index: 0;
+.portfolio_container .buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
-.project__tags{
-  margin-top: 5px;
-  color: var(--color-light);
+.live {
+  margin-left: 10px;
 }
-.icons {
-  font-size: 1.5rem;
-  margin-top: 10px;
+
+.all-project-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
 
 @media screen and (max-width: 1024px) {
-  .project__section {
-    display: flex;
-    flex-direction: column;
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
   }
-  .project__left {
-    /* width: 100%; */
-    display: none;
+
+  .all-project-button {
+    margin-bottom: 80px;
   }
-  .project__right {
-    width: 100%;
-    text-align: start;
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
+
+@media screen and (max-width: 600px) {
+  .portfolio_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
   }
-  .project__right__middle {
-    width: 100%;
-    text-align: end;
-  }
-  .middle{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .project__description {
-    margin-left: 0px;
-  }
-  .project__description__middle {
-    margin-right: 0px;
+  .all-project-button {
+    margin-bottom: 80px;
   }
 }
