@@ -8,6 +8,7 @@ import Timeline from "./Timeline";
 import Experience from "../Experience/Experience";
 
 const About = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   return (
     <section data-aos="fade-up" data-aos-duration="1500" id="about">
       <h5>Get To Know</h5>
@@ -26,7 +27,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 Year</small>
             </article>
-            <article className="about_card">
+            <article className="about_card second">
               <FiUsers className="about_icon" />
               <h5>Clients</h5>
               <small>10+ Worldwide</small>

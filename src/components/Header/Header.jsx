@@ -6,6 +6,7 @@ import HeaderSocial from "./HeaderSocial";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   return (
     <header id="header">
       <div className="container heder-content header_container">

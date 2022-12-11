@@ -32,6 +32,9 @@
 /* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
 
 @media screen and (max-width: 600px) {
+  .coming-soon {
+    margin: 25px;
+  }
   .blog {
     font-size: 3rem;
   }

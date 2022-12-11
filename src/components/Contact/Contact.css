@@ -66,6 +66,10 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .send-message {
+    margin-bottom: 80px;
+  }
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
@@ -73,5 +77,8 @@ textarea {
 @media screen and (max-width: 600px) {
   .container.contact_container {
     width: var(--container-width-sm);
+  }
+  .send-message {
+    margin-bottom: 80px;
   }
 }

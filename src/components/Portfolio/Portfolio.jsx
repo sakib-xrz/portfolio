@@ -107,6 +107,7 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   return (
     <section data-aos="fade-up" data-aos-duration="1500" id="portfolio">
       <h5>My Recent Work</h5>
@@ -146,7 +147,12 @@ const Portfolio = () => {
         ))}
       </div>
       <div className="all-project-button">
-        <a className="btn btn-primary" href="#contact">
+        <a
+          className="btn btn-primary"
+          href="https://github.com/sakib-xrz?tab=repositories"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           See All Projects
         </a>
       </div>

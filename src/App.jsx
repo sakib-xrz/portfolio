@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
 import "./app.css";
-import { RouterProvider } from 'react-router-dom'
-import { router } from './router/routes'
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/routes";
 
 const App = () => {
   useEffect(() => {
@@ -16,6 +16,6 @@ const App = () => {
       <RouterProvider router={router} />
     </div>
   );
-}
+};
 
-export default App
+export default App;

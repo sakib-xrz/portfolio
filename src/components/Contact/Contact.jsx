@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
 const Contact = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -110,7 +111,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" value="Send" className="btn btn-primary">
+          <button type="submit" value="Send" className="btn btn-primary send-message">
             Send Message
           </button>
         </form>
