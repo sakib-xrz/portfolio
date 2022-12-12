@@ -58,6 +58,44 @@
   margin-top: 30px;
 }
 
+.project-name {
+  height: 150px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.project-details-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 0rem 4rem;
+}
+
+.project-detail-image {
+  height: 290px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-details-header .links{
+}
+
+.project-details-header .links a{
+  margin-right: 10px;
+}
+
+.project-detail-content {
+}
+
+
+
+.project-detail-content p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
 
 @media screen and (max-width: 1024px) {
@@ -80,5 +118,8 @@
   }
   .all-project-button {
     margin-bottom: 80px;
+  }
+  .project-name {
+    height: 165px;
   }
 }

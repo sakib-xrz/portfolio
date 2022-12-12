@@ -34,6 +34,10 @@ export const router = createBrowserRouter([
       },
       {
         path: "/projects/:id",
+        loader: ({ params }) =>
+          fetch(
+            `https://portfolio-server-sigma.vercel.app/projects/${params.id}`
+          ),
         element: <ProjectDetails></ProjectDetails>,
       },
     ],
