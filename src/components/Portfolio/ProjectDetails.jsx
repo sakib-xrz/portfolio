@@ -35,14 +35,6 @@ const ProjectDetails = () => {
                 target={"_blank"}
                 rel="noreferrer"
                 className="btn"
-                href={liveLink}
-              >
-                Live Website Link
-              </a>
-              <a
-                target={"_blank"}
-                rel="noreferrer"
-                className="btn"
                 href={clientLink}
               >
                 Client Side Code
@@ -55,17 +47,25 @@ const ProjectDetails = () => {
               >
                 Server Side Code
               </a>
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                className="btn"
+                href={liveLink}
+              >
+                Live Website Link
+              </a>
             </div>
           </div>
           <div className="project-detail-content">
             <p>{description}</p>
             {details.map((d, i) => (
-              <li key={i}>{d}</li>
+              <li className="list-style" key={i}>{d}</li>
             ))}
           </div>
         </div>
       </PhotoProvider>
-      <ImageSlideShow screenshots={screenshots}></ImageSlideShow>
+      {/* <ImageSlideShow screenshots={screenshots}></ImageSlideShow> */}
     </section>
   );
 };
