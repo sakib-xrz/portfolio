@@ -7,15 +7,25 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
+import Loader from "../Spinner/Loader";
 
 const Portfolio = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("https://portfolio-server-sigma.vercel.app/projects")
       .then((res) => res.json())
-      .then((data) => setProjects(data));
+      .then((data) => {
+        setLoading(false);
+        setProjects(data);
+      });
   }, []);
+
+  if (loading) {
+    return <Loader></Loader>;
+  }
+
   return (
     <section data-aos="fade-up" data-aos-duration="1500" id="portfolio">
       <h5>My Recent Work</h5>

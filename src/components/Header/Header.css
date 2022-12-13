@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 2rem;
   overflow: hidden;
 }
@@ -25,6 +25,20 @@ header {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+}
+
+.mobile-social-icon {
+  display: none;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.first {
+  margin-right: 1.5rem;
+}
+
+.last {
+  margin-left: 1.5rem;
 }
 
 /* =============== HEADER SOCIALS ============== .*/
@@ -119,5 +133,9 @@ header {
   .heder-content {
     height: auto;
     padding-bottom: 0rem;
+  }
+
+  .mobile-social-icon {
+    display: block;
   }
 }

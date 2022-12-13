@@ -6,6 +6,7 @@ import { FiUsers } from "react-icons/fi";
 import { RiFolderSettingsLine } from "react-icons/ri";
 import Timeline from "./Timeline";
 import Experience from "../Experience/Experience";
+import { Link } from "react-router-dom";
 
 const About = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -35,7 +36,7 @@ const About = () => {
             <article className="about_card">
               <RiFolderSettingsLine className="about_icon" />
               <h5>Projects</h5>
-              <small>10+ Completed</small>
+              <small>25+ Completed</small>
             </article>
           </div>
 
@@ -49,9 +50,9 @@ const About = () => {
             University.
           </p>
 
-          <a className="btn btn-primary" href="#contact">
+          <Link className="btn btn-primary" to="/contact">
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
       <Timeline></Timeline>
