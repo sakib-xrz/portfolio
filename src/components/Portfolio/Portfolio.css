@@ -71,14 +71,6 @@
   margin: 0rem 4rem;
 }
 
-.project-detail-image {
-  height: 290px;
-  overflow-y: scroll;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 .project-details-header .links a {
   margin-right: 10px;
 }
@@ -86,6 +78,30 @@
 .project-detail-content p {
   font-size: 1rem;
   margin-bottom: 5px;
+}
+
+.image-div {
+  height: 340px;
+  overflow-y: scroll;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-slide {
+  margin-bottom: 20px;
+}
+
+.image-slide img {
+  object-position: top;
+  border-radius: 8px;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel .carousel-status {
+  display: none;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
@@ -125,6 +141,12 @@
   }
   .list-style {
     list-style-position: outside;
+  }
+  .image-div {
+    height: 350px;
+  }
+  .image-slide {
+    padding: 2rem;
   }
 }
 
@@ -166,5 +188,11 @@
   }
   .list-style {
     list-style-position: outside;
+  }
+  .image-slide {
+    padding: 1rem;
+  }
+  .image-div {
+    height: 170px;
   }
 }

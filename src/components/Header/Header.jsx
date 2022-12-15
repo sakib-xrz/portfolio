@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header id="header">
       <div className="container heder-content header_container">
-        <div className="animate__animated animate__slideInDown">
+        <div className="header-content animate__animated animate__slideInDown">
           <div className="me">
             <img src={MyImg} alt="" />
           </div>

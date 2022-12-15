@@ -3,7 +3,8 @@ import { useLoaderData } from "react-router-dom";
 import "./Portfolio.css";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import ImageSlideShow from "./ImageSlideShow";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const ProjectDetails = () => {
   const projectDetails = useLoaderData();
@@ -25,11 +26,13 @@ const ProjectDetails = () => {
       <PhotoProvider>
         <div className="project-details-header">
           <div>
-            <div className="project-detail-image">
-              <PhotoView src={img}>
-                <img src={img} alt="" />
-              </PhotoView>
-            </div>
+            <Carousel className="image-slide">
+              {screenshots.map((ss, i) => (
+                <div className="image-div" key={i}>
+                  <img src={ss} alt="" />
+                </div>
+              ))}
+            </Carousel>
             <div className="links">
               <a
                 target={"_blank"}
@@ -60,12 +63,13 @@ const ProjectDetails = () => {
           <div className="project-detail-content">
             <p>{description}</p>
             {details.map((d, i) => (
-              <li className="list-style" key={i}>{d}</li>
+              <li className="list-style" key={i}>
+                {d}
+              </li>
             ))}
           </div>
         </div>
       </PhotoProvider>
-      {/* <ImageSlideShow screenshots={screenshots}></ImageSlideShow> */}
     </section>
   );
 };
