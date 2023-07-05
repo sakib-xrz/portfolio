@@ -1,6 +1,6 @@
 .portfolio_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
 }
 
@@ -42,6 +42,16 @@
   margin-bottom: 15px;
 }
 
+.heading-content a{
+  font-weight: 500;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.heading-content a:hover {
+  color: #57B2F5;
+}
+
 .portfolio_container .buttons {
   display: flex;
   justify-content: space-between;
@@ -59,7 +69,7 @@
 }
 
 .project-name {
-  height: 150px;
+  height: 10rem;
   overflow-y: scroll;
   cursor: pointer;
 }

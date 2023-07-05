@@ -130,15 +130,16 @@ a:hover {
   transition: var(--transition);
 }
 
-.btn:hover {
+/* .btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
-}
+} */
 
 .btn-primary {
   background: var(--color-primary);
   transition: var(--transition);
+  border: none;
 }
 
 img {

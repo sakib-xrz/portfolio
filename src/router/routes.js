@@ -3,9 +3,7 @@ import Main from "../layout/Main";
 import Header from "../components/Header/Header";
 import About from "../components/About/About";
 import Portfolio from "../components/Portfolio/Portfolio";
-import Blog from "../components/Blog/Blog";
 import Contact from "../components/Contact/Contact";
-import ProjectDetails from "../components/Portfolio/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -25,20 +23,8 @@ export const router = createBrowserRouter([
         element: <Portfolio></Portfolio>,
       },
       {
-        path: "blog",
-        element: <Blog></Blog>,
-      },
-      {
         path: "contact",
         element: <Contact></Contact>,
-      },
-      {
-        path: "/projects/:id",
-        loader: ({ params }) =>
-          fetch(
-            `https://portfolio-server-sigma.vercel.app/projects/${params.id}`
-          ),
-        element: <ProjectDetails></ProjectDetails>,
       },
     ],
   },

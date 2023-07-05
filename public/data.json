@@ -1,0 +1,80 @@
+[
+    {
+        "id": "01",
+        "projectName": "Food Chemistry",
+        "img": "https://i.ibb.co/Qcwh6G2/project-0.png",
+        "description": "Food Chemistry is an e-commerce restaurant where users can authenticate securely, order food, manage their orders, and pay seamlessly with SSLCOMMERZ.",
+        "liveLink": "https://food-chemistry-b7586.web.app/",
+        "clientLink": "https://github.com/sakib-xrz/food-chemistry-client",
+        "serverLink": "https://github.com/sakib-xrz/swap-deal-server",
+        "technology": [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase",
+            "JWT"
+        ]
+    },
+    {
+        "id": "02",
+        "projectName": "Swap Deal",
+        "img": "https://i.ibb.co/0Fk4k5t/project1.png",
+        "description": "Swap Deal is a used product's resale website with a dedicated admin panel. User, Seller, and admin roles added with the Google authentication system.",
+        "liveLink": "https://swap-deal-bd.web.app/",
+        "clientLink": "https://github.com/sakib-xrz/swap-deal-client",
+        "serverLink": "https://github.com/sakib-xrz/swap-deal-server",
+        "technology": [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase",
+            "JWT"
+        ]
+    },
+    {
+        "id": "03",
+        "projectName": "Pixel Pictures",
+        "img": "https://i.ibb.co/VYXgknP/project2.png",
+        "description": "Service Website including add or remove services. Form to leave reviews for the clients to show on the details page. Option to add more services to all service page.",
+        "liveLink": "https://service-review-6ef0e.web.app/",
+        "clientLink": "https://github.com/sakib-xrz/service-review-client",
+        "serverLink": "https://github.com/sakib-xrz/service-review-server",
+        "technology": [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase",
+            "JWT",
+            "React Photo View"
+        ]
+    },
+    {
+        "id": "04",
+        "projectName": "Code Easy",
+        "img": "https://i.ibb.co/V3cfW60/project3.png",
+        "description": "Discover an e-learning platform for web developers, featuring secure login, private routes, and the ability to download course details as PDFs.",
+        "liveLink": "https://code-easy-client.web.app/",
+        "clientLink": "https://github.com/sakib-xrz/code-easy-client",
+        "serverLink": "https://github.com/sakib-xrz/code-easy-server",
+        "technology": [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "daisyUI",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase",
+            "React to PDF Package"
+        ]
+    }
+]
